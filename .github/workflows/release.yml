@@ -21,7 +21,7 @@ jobs:
                   node-version: 18.x
                   registry-url: 'https://registry.npmjs.org' # This registry URL is necessary for publishing on NPM
             - name: Install Dependencies
-              run: npm ci
+              run: npm i
             - name: Build Louis Package
               run: npm run build
             - name: Release Louis Package
