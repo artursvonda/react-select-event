@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/romgain/react-select-event.git"
+    "url": "git+https://github.com/lokalise/react-select-event.git"
   },
   "keywords": [
     "react-testing-library",

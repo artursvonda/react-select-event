@@ -22,9 +22,9 @@ jobs:
                   registry-url: 'https://registry.npmjs.org' # This registry URL is necessary for publishing on NPM
             - name: Install Dependencies
               run: npm i
-            - name: Build Louis Package
+            - name: Build Package
               run: npm run build
-            - name: Release Louis Package
+            - name: Release Package
               env:
                   HUSKY: 0 # skip the husky hooks
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # need this to publish on NPM
