@@ -5,14 +5,14 @@ import pkg from "./package.json";
 export default [
   {
     input: "src/index.ts",
-    external: ["@testing-library/dom"],
+    external: Object.keys(pkg.dependencies),
     plugins: [
       resolve({ extensions: [".js", ".ts"] }),
-      babel({ extensions: [".js", ".ts"] })
+      babel({ extensions: [".js", ".ts"] }),
     ],
     output: [
       { file: pkg.main, format: "cjs", exports: "named" },
-      { file: pkg.module, format: "es" }
-    ]
-  }
+      { file: pkg.module, format: "es" },
+    ],
+  },
 ];

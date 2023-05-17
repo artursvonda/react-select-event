@@ -1,5 +1,5 @@
 {
-  "name": "react-select-event",
+  "name": "@lokalise/react-select-event",
   "version": "5.5.1",
   "description": "Simulate react-select events for react-testing-library",
   "main": "lib/react-select-event.cjs.js",
@@ -29,6 +29,9 @@
     "javascript",
     "unit-testing"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Romain Bertrand",
   "license": "MIT",
   "bugs": {
