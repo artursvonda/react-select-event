@@ -36,7 +36,7 @@ export const openMenu = async (
 const type = async (
   input: HTMLElement,
   text: string,
-  { user = userEvent }: UserEventOptions = {}
+  { user }: Required<UserEventOptions>
 ) => {
   await user.type(input, text);
 };
@@ -44,7 +44,7 @@ const type = async (
 // press the "clear" button, and reset various states
 const clear = async (
   clearButton: Element,
-  { user = userEvent }: UserEventOptions = {}
+  { user }: Required<UserEventOptions>
 ) => {
   await user.click(clearButton);
 };

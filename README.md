@@ -32,7 +32,7 @@ const selectEvent = require("react-select-event");
 
 ### Supported versions of `react-select`
 
-This library is tested against all versions of `react-select` starting from `2.1.0`.
+This library is tested against all versions of `react-select` starting from `4.0.0`.
 
 ## API
 
